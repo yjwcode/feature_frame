@@ -2,6 +2,10 @@
 //#include <stdio>
 #include <vector>
 #include <map>
+#include <boost/algorithm/string.hpp>
+
+#define LOG(msg) \
+	    std::cout << __FILE__ << "(" << __LINE__ << "): " << msg << std::endl 
 using namespace std;
 class FeatureConf;
 
@@ -52,15 +56,16 @@ public:
 	}
 	map<string,string> _data_source;
 	vector<FeatureStore> _feature_stores;
+	map<string,string> _input_map;
 };
+
 class FeatureMaker{
 public:
-	int init(){}
+	int init(const string & path){return 0;}
 	int make_features(WhiteBoard & wb, vector<long> & features);
 private:
 	vector<FeatureConf> _fcs;
 };
-//
 //int FeatureMaker::make_features(WhiteBoard & wb, vector<long> & features) {
 //	wb.init(_fcs);
 //	wb.run();
