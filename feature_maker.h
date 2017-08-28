@@ -51,13 +51,13 @@ public:
 	map<string,string> _data_source;
 	vector<FeatureStore> _feature_stores;
 };
-//class FeatureMaker{
-//public:
-//	int init(){}
-//	int make_features(WhiteBoard & wb, vector<long> & features);
-//private:
-//	vector<FeatureConf> _fcs;
-//};
+class FeatureMaker{
+public:
+	int init(){}
+	int make_features(WhiteBoard & wb, vector<long> & features);
+private:
+	vector<FeatureConf> _fcs;
+};
 //
 //int FeatureMaker::make_features(WhiteBoard & wb, vector<long> & features) {
 //	wb.init(_fcs);
