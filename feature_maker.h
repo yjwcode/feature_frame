@@ -8,6 +8,8 @@ class FeatureConf;
 class FeatureFunc{
 public:
 	virtual int run(const vector<string> & depends, vector<string> & results) const ;
+
+
 };
 class FeatureFuncDirect{
 public:
