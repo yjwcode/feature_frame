@@ -16,6 +16,8 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
 TEST_CASE( "maker", "1" ) {
 	LOG("Test case start");
 	FeatureMaker maker;
-    REQUIRE( maker.init("abc") == 0 );
+	//string path = "./test/conf/feature_maker.conf";
+	string path = "/Users/yejingwei/code/work/feature_frame/test/conf/feature_maker.conf";
+    REQUIRE( maker.init(path) == 0 );
 
 }
