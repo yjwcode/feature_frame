@@ -21,3 +21,19 @@ TEST_CASE( "maker", "1" ) {
     REQUIRE( maker.init(path) == 0 );
 
 }
+
+TEST_CASE( "maker2", "2" ) {
+	LOG("Test case start");
+	FeatureMaker maker;
+	//string path = "./test/conf/feature_maker.conf";
+	string path = "/Users/yejingwei/code/work/feature_frame/test/conf/feature_maker.conf";
+    REQUIRE( maker.init(path) == 0 );
+	//@i_user_id,i_user_province,i_item_id,i_user_tags,
+	WhiteBoard wb;
+	wb._tmp_map["i_user_id"] = "1";
+	wb._tmp_map["i_user_province"] = "2";
+	wb._tmp_map["i_item_id"] = "3";
+	wb._tmp_map["i_item_media"] = "4";
+	wb._tmp_map["i_user_os"] = "android";
+	maker.make_features	(wb);
+}
