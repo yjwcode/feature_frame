@@ -13,6 +13,6 @@ LINKFLAGS =  -lboost_system-mt
 # FINAL FLAGS -- TO BE USED THROUGHOUT
 FLAGS = $(BASE_FLAGS) $(LLIBFLAGS) $(LDFLAGS) $(LINKFLAGS)
 
-test.exe: test/ff_test.cpp feature_maker.h
+test.exe: test/ff_test.cpp feature_maker.h mmhash.h
 	g++ $(FLAGS) -o $@ test/ff_test.cpp
 

@@ -14,7 +14,7 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
 }
 
 TEST_CASE( "maker", "1" ) {
-	LOG("Test case start");
+	FF_LOG("Test case start");
 	FeatureMaker maker;
 	//string path = "./test/conf/feature_maker.conf";
 	string path = "/Users/yejingwei/code/work/feature_frame/test/conf/feature_maker.conf";
@@ -23,7 +23,7 @@ TEST_CASE( "maker", "1" ) {
 }
 
 TEST_CASE( "maker2", "2" ) {
-	LOG("Test case start");
+	FF_LOG("Test case start");
 	FeatureMaker maker;
 	//string path = "./test/conf/feature_maker.conf";
 	string path = "/Users/yejingwei/code/work/feature_frame/test/conf/feature_maker.conf";
