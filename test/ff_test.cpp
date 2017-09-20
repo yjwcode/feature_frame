@@ -35,5 +35,7 @@ TEST_CASE( "maker2", "2" ) {
 	wb._tmp_map["i_item_id"] = "3";
 	wb._tmp_map["i_item_media"] = "4";
 	wb._tmp_map["i_user_os"] = "android";
+	wb._tmp_map["i_user_long_sc_top20"] = "1:10.1,2:20.2";
+	wb._tmp_map["i_user_media_top20"] = "马鞍山生活君:0.004431848414242268,女人健身频道:0.004431848414242268";
 	maker.make_features	(wb);
 }
